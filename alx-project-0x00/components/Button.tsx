@@ -5,7 +5,7 @@ export interface ButtonProps {
   title: string;
   size?: "small" | "medium" | "large"; // optional, default = medium
   shape?: "rounded-sm" | "rounded-md" | "rounded-full" | "rounded-lg"; // optional, default = rounded-md
-  styles ?: string; // optional for any extra Tailwind classes
+  styles?: string; // optional for any extra Tailwind classes
 }
 
 const Button: React.FC<ButtonProps> = ({
