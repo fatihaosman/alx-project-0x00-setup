@@ -4,15 +4,15 @@ import React from "react";
 export interface ButtonProps {
   title: string;
   size?: "small" | "medium" | "large"; // optional, default = medium
-  shape?: "rounded-sm" | "rounded-md" | "rounded-full"; // optional, default = rounded-md
-  additionalStyles?: string; // optional for any extra Tailwind classes
+  shape?: "rounded-sm" | "rounded-md" | "rounded-full" | "rounded-lg"; // optional, default = rounded-md
+  styles ?: string; // optional for any extra Tailwind classes
 }
 
 const Button: React.FC<ButtonProps> = ({
   title,
   size = "medium",
   shape = "rounded-md",
-  additionalStyles = "",
+  styles  = "",
 }) => {
   // Define Tailwind styles based on size
   let sizeClasses = "";
@@ -22,7 +22,7 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <button
-      className={`bg-blue-500 text-white font-semibold ${sizeClasses} ${shape} ${additionalStyles}`}
+      className={`bg-blue-500 text-white font-semibold ${sizeClasses} ${shape} ${styles }`}
     >
       {title}
     </button>
