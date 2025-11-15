@@ -5,14 +5,18 @@
 //     </div>
 //   )
 // }
-// export default Landing  
+// export default Landing    
 import React from "react";
+import Card from "@/components/Card";
+
 import Button from "@/components/Button";
 
 const Landing: React.FC = () => {
   return (
     <div className="p-6 flex flex-col gap-4">
       <h1 className="text-xl font-extralight">Landing Page</h1>
+       {/* Render Card component */}
+      <Card />
 
       {/* Different buttons */}
       <Button title="Small Rounded" size="small" shape="rounded-sm" />
