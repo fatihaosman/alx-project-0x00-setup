@@ -29,7 +29,7 @@ const Landing: React.FC = () => {
         title="Custom Button"
         size="medium"
         shape="rounded-full"
-        additionalStyles="bg-green-500 hover:bg-green-600"
+        styles ="bg-green-500 hover:bg-green-600"
       />
     </div>
   );
