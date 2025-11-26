@@ -1,18 +1,19 @@
 import React from "react";
+import { ButtonProps } from "@/interfaces";
 
 // Define interface for the Button props
-export interface ButtonProps {
-  title: string;
-  size?: "small" | "medium" | "large"; // optional, default = medium
-  shape?: "rounded-sm" | "rounded-md" | "rounded-full" | "rounded-lg"; // optional, default = rounded-md
-  styles?: string; // optional for any extra Tailwind classes
-}
+// export interface ButtonProps {
+//   title: string;
+//   size?: "small" | "medium" | "large"; // optional, default = medium
+//   shape?: "rounded-sm" | "rounded-md" | "rounded-full" | "rounded-lg"; // optional, default = rounded-md
+//   // styles?: string; // optional for any extra Tailwind classes
+// }
 
 const Button: React.FC<ButtonProps> = ({
   title,
   size = "medium",
   shape = "rounded-md",
-  styles  = "",
+  styles = "",
 }) => {
   // Define Tailwind styles based on size
   let sizeClasses = "";
